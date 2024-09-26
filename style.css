@@ -1,0 +1,15 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+
+#introduction{
+    font-size: 2;
+}
+
+.color {
+    color:rgb(134, 43, 226);
+}
