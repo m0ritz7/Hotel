@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Bereich</title>
+    <style>
+        /* Grundstil */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .faq-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .faq-section h2 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-item {
+            margin-bottom: 10px;
+        }
+        .faq-item button {
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            padding: 10px;
+            color: #444;
+            background: #e0e0e0;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+        .faq-item button:hover {
+            background-color: #ccc;
+        }
+        .faq-item .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #00bcd4;
+        }
+        /* JavaScript-Support: Antwort anzeigen/verstecken */
+    </style>
+</head>
+<body>
+
+<div class="faq-section">
+    <h2>Häufig gestellte Fragen (FAQ)</h2>
+
+    <div class="faq-item">
+        <button onclick="toggleAnswer(this)">Wie kann ich ein Zimmer buchen?</button>
+        <div class="answer">
+            <p>Sie können ein Zimmer direkt auf unserer Website buchen, indem Sie Ihre Reisedaten und die Anzahl der Gäste eingeben und ein Zimmer auswählen.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button onclick="toggleAnswer(this)">Wie kann ich meine Buchung stornieren?</button>
+        <div class="answer">
+            <p>Gehen Sie zu „Buchung verwalten“, geben Sie Ihre Buchungsdaten ein und wählen Sie die Option zur Stornierung. Beachten Sie die Stornierungsbedingungen.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button onclick="toggleAnswer(this)">Welche Zahlungsmethoden werden akzeptiert?</button>
+        <div class="answer">
+            <p>Wir akzeptieren Kreditkarte, PayPal und Sofortüberweisung. Weitere Informationen finden Sie auf der Zahlungsseite.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button onclick="toggleAnswer(this)">Kann ich meine Buchung ändern?</button>
+        <div class="answer">
+            <p>Ja, Sie können Änderungen über „Buchung verwalten“ vornehmen, sofern die Verfügbarkeit und Buchungsbedingungen es erlauben.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Funktion zur Steuerung der Anzeige von Antworten
+    function toggleAnswer(button) {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
