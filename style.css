@@ -5,89 +5,117 @@ body {
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #f4f4f4; /* Leichter Hintergrund für ein modernes Design */
 }
 
-/* Stil für die Menüleiste (Navigation) */
-nav {
-    background-color: #282828; /* Schwarzer Menübalken */
-    padding: 15px 0; /* Nur oben und unten Padding */
-    display: flex;
-    justify-content: center; /* Links zentrieren */
-    position: sticky; /* Bleibt beim Scrollen am oberen Rand */
-    top: 0; /* Befestigung am oberen Bildschirmrand */
-    z-index: 1000; /* Überlagerung über anderen Elementen */
-}
-
-nav a {
-    color: #ffffff; /* Blaue Schriftfarbe für Links im Menü */
-    background-color: #282828; 
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px; /* Innenabstand für mehr Klickenbarkeit */
-    transition: background-color 0.3s; /* Sanfter Übergang für den Hover-Effekt */
-}
-
-nav a:hover {
-    background-color: #ff5a00; /* Etwas hellerer Hintergrund beim Hover über den Links */
-    color: #282828; /* Weiße Schrift beim Hover */
-    border-radius: 5px; /* Runde Ecken für ein modernes Aussehen */
-}
-
-/* Hauptüberschrift */
 h1 {
-    color: rgb(29, 145, 184); /* Blaue Hauptüberschrift */
+    color: rgb(29, 145, 184);
     font-size: 40px;
-    text-align: center;
-    margin: 20px 0;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+#introduction {
+    font-size: 2;
+}
+
+.color {
+    color: rgb(134, 43, 226);
 }
 
 /* Container für den News-Bereich */
 .news-container {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    padding: 15px;
-    width: 80%;
-    max-width: 800px;
-    border-radius: 8px; /* Runde Ecken für ein modernes Aussehen */
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
 }
 
-/* Nachrichtencontainer-Ausrichtung */
-.news-container h2,
-.news-container h3,
-.news-container h4 {
-    color: rgb(29, 145, 184); /* Blaue Farbe für die Nachrichtentitel */
-    margin-bottom: 10px;
-}
-
-.news-container p {
-    color: #282828;
-    line-height: 1.6; /* Mehr Zeilenabstand für bessere Lesbarkeit */
-}
-
-/* Wrapper für den Hauptinhalt */
 .wrapper {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    /* Flexbox für horizontale Anordnung */
 }
 
-.content {
+/* Styles für die Links in der Nav-Bar */
+.nav-links li {
     flex: 1;
-    padding: 20px;
-    background-color: transparent;
-    margin: 0;
+    /* Jeder Link nimmt gleich viel Platz ein */
 }
 
-/* Stil für den Footer */
-footer {
-    background-color: #282828; /* Schwarzer Hintergrund für den Footer */
-    color: #282828;
-    padding: 15px 0;
+.nav-links a {
+    display: block;
+    /* Macht den gesamten Bereich des Links klickbar */
+    color: #fff;
+    /* Textfarbe der Links */
     text-align: center;
-    width: 100%;
-    margin: 0;
+    /* Zentriert den Text */
+    padding: 14px 20px;
+    /* Innenabstand für Links */
+    text-decoration: none;
+    /* Entfernt Unterstreichung */
+    transition: background-color 0.3s;
+    /* Sanfter Übergang für Hintergrundfarbe */
 }
 
+/* Hover-Effekt für die Links */
+.nav-links a:hover {
+    background-color: #555;
+    /* Hintergrundfarbe beim Hover */
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #282828;
+    /* Hintergrundfarbe des Footers */
+    color: white;
+    /* Textfarbe */
+    text-align: center;
+    /* Zentriert den Text im Footer */
+    padding: 20px;
+    /* Innenabstand */
+    position: fixed;
+    /* Positionierung */
+    bottom: 0;
+    /* Positionierung am unteren Rand */
+    width: 100%;
+    /* Breite des Footers */
+}
+
+/* Styles für den Footer-Inhalt */
+.footer-content {
+    max-width: 1200px;
+    /* Maximale Breite des Inhalts */
+    margin: 0 auto;
+    /* Zentriert den Inhalt */
+}
+
+.footerstatic{
+    /* Extra footer der am bottom der Website bleibt für hilfe.html */
+    background-color: #282828;
+    /* Hintergrundfarbe des Footers */
+    color: white;
+    /* Textfarbe */
+    text-align: center;
+    /* Zentriert den Text im Footer */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
