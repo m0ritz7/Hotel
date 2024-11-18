@@ -1,0 +1,245 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+} 
+
+.benutzeranleitung {
+    padding: 30px;
+}
+
+h1 {
+    color: #282828;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #282828;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    color: #282828;
+    font-size: 20px;
+}
+
+h4 {
+    color: #282828;
+    font-size: 15px;
+    margin-bottom: -5px;
+}
+
+/* Styles für die Nav-Bar */
+.navbar {
+    background-color: #282828;
+    /* Hintergrundfarbe der Nav-Bar */
+    overflow: hidden;
+    /* Verhindert das Überlaufen von Inhalten */
+    position: sticky;
+    top: 0;
+    padding: 10px;
+}
+
+/* Styles für die Liste in der Nav-Bar */
+.nav-links {
+    list-style-type: none;
+    /* Entfernt Aufzählungszeichen */
+    padding: 0;
+    /* Entfernt Standard-Padding */
+    margin: 0;
+    /* Entfernt Standard-Margin */
+    display: flex;
+    /* Flexbox für horizontale Anordnung */
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styles für die Links in der Nav-Bar */
+.nav-links li {
+    flex: 1;
+    /* Jeder Link nimmt gleich viel Platz ein */
+}
+
+.nav-links a {
+    display: block;
+    /* Macht den gesamten Bereich des Links klickbar */
+    color: #fff;
+    /* Textfarbe der Links */
+    text-align: center;
+    /* Zentriert den Text */
+    padding: 14px 20px;
+    /* Innenabstand für Links */
+    text-decoration: none;
+    /* Entfernt Unterstreichung */
+    transition: background-color 0.3s;
+    /* Sanfter Übergang für Hintergrundfarbe */
+}
+
+/* Hover-Effekt für die Links */
+.nav-links a:hover {
+    background-color: #555;
+    /* Hintergrundfarbe beim Hover */
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #282828;
+    /* Hintergrundfarbe des Footers */
+    color: white;
+    /* Textfarbe */
+    text-align: center;
+    /* Zentriert den Text im Footer */
+    padding: 20px;
+    /* Innenabstand */
+    position: fixed;
+    /* Positionierung */
+    bottom: 0;
+    /* Positionierung am unteren Rand */
+    width: 100%;
+    /* Breite des Footers */
+}
+
+/* Styles für den Footer-Inhalt */
+.footer-content {
+    max-width: 1200px;
+    /* Maximale Breite des Inhalts */
+    margin: 0 auto;
+    /* Zentriert den Inhalt */
+}
+
+.footerstatic{
+    /* Extra footer der am bottom der Website bleibt für hilfe.html */
+    background-color: #282828;
+    /* Hintergrundfarbe des Footers */
+    color: white;
+    /* Textfarbe */
+    text-align: center;
+    /* Zentriert den Text im Footer */
+    padding: 20px;
+    /* Innenabstand */
+    position: static;
+    /* Positionierung */
+    bottom: 0;
+    /* Positionierung am unteren Rand */
+    width: 100%;
+    /* Breite des Footers */
+}
+
+/* Log in Container Design */
+.login-container {
+    background-color: white; /* Hintergrundfarbe des Containers */
+    padding: 40px; /* Innenabstand */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Schatten für einen 3D-Effekt */
+    width: 300px; /* Breite des Containers */
+    border-radius: 10px;
+    margin: 200px 500px;
+}
+
+/* Styles für das Formular */
+.login-form h1 {
+    text-align: center; /* Zentriert den Titel */
+    margin-bottom: 20px; /* Abstand nach unten */
+}
+
+/* Styles für die Form-Gruppe */
+.form-group {
+    margin-bottom: 15px; /* Abstand zwischen den Form-Elementen */
+}
+
+.form-group label {
+    display: block; /* Macht das Label blockartig */
+    margin-bottom: 5px; /* Abstand nach unten */
+}
+
+.form-group input {
+    width: 100%; /* Volle Breite */
+    padding: 10px; /* Innenabstand */
+    border: 1px solid #ccc; /* Rahmenfarbe */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Breite */
+}
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50; /* Grün */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #45a049; 
+}
+
+.register-link{
+    margin: 10px;
+}
+
+.register-container{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 50px 500px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="number"],
+.register-container input[type="email"],
+.register-container input[type="password"]
+{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.impressum-container-1{
+    padding: 30px;
+    margin: 0px;
+}
+
+.impressum-container-2{
+padding: 30px;
+margin-top: -40px;
+}
+
+.impressum-container-3{
+padding: 30px;
+margin-top: -20px;
+}
+
+img{
+    padding: 30px;
+    margin-top: -20px;
+}
+
