@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Impressum</title>
-
-</head>
-
-<body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.php">Startseite</a></li>
-            <li><a href="hilfe.html">Hilfe</a></li>
-            <li><a href="legalnotice.html">Über uns</a></li>
-            <li><a href="login.html">Log in</a></li>
-        </ul>
-    </nav>
+<?php
+$title = "Impressum";
+include 'includes/header.php';
+include 'includes/navbar.php';
+?>
 
     <div class="impressum-container-1">
     <h3>Dings Hotel GmbH</h3>
@@ -52,10 +36,4 @@
     </p>
 </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Dings Hotel. Alle Rechte vorbehalten.</p>
-    </footer>
-
-</body>
-
-</html>
+<?php include 'includes/footer.php'; ?>
