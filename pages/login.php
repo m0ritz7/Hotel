@@ -16,7 +16,7 @@ include '../includes/navbar.php';
                 <input type="password" id="password" name="password" required>
             </div>
             <button class="login-button">Einloggen</button>
-            <p class="register-link">Noch kein Konto? <a href="../pages/register.html">Registrieren</a></p>
+            <p class="register-link">Noch kein Konto? <a href="../pages/register.php">Registrieren</a></p>
         </form>
     </div>
 
