@@ -1,7 +1,7 @@
 <?php
 $title = "Registrieren-Seite";
-include 'includes/header.php';
-include 'includes/navbar.php';
+include '../includes/header.php';
+include '../includes/navbar.php';
 ?>
 
     <p>
@@ -63,4 +63,4 @@ include 'includes/navbar.php';
     </form>
     </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
