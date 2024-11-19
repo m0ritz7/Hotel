@@ -1,7 +1,7 @@
 <?php
 $title = "Startseite";
-include 'includes/header.php';
-include 'includes/navbar.php';
+include '../includes/header.php';
+include '../includes/navbar.php';
 ?>
 
     <main>
@@ -34,4 +34,4 @@ include 'includes/navbar.php';
 
     </main>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php include '../includes/footer.php'; ?>

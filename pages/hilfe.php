@@ -1,7 +1,7 @@
 <?php
 $title = "Hilfeseite";
-include 'includes/header.php';
-include 'includes/navbar.php';
+include '../includes/header.php';
+include '../includes/navbar.php';
 ?>
 
     <div class="benutzeranleitung">
@@ -94,4 +94,4 @@ include 'includes/navbar.php';
         Viel Erfolg bei der Nutzung der Hotelwebsite und genießen Sie Ihren Aufenthalt!
     </div>
 
-    <?php include 'includes/footer.php'; ?>
+    <?php include '../includes/footer.php'; ?>

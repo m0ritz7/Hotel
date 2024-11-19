@@ -1,7 +1,7 @@
 <?php
 $title = "Login-Seite";
-include 'includes/header.php';
-include 'includes/navbar.php';
+include '../includes/header.php';
+include '../includes/navbar.php';
 ?>
 
     <div class="login-container">
@@ -16,8 +16,8 @@ include 'includes/navbar.php';
                 <input type="password" id="password" name="password" required>
             </div>
             <button class="login-button">Einloggen</button>
-            <p class="register-link">Noch kein Konto? <a href="register.html">Registrieren</a></p>
+            <p class="register-link">Noch kein Konto? <a href="../pages/register.php">Registrieren</a></p>
         </form>
     </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
