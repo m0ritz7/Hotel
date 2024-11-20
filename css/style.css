@@ -5,6 +5,7 @@ body {
     padding: 0;
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
+    height: 100%;
 } 
 
 .benutzeranleitung {
@@ -88,7 +89,11 @@ h4 {
     /* Hintergrundfarbe beim Hover */
     border-radius: 10px;
 }
-
+.content-wrapper {
+    min-height: 100%; /* Mindestens die Fensterhöhe einnehmen */
+    display: flex;
+    flex-direction: column;
+}
 .footer {
     background-color: #282828;
     /* Hintergrundfarbe des Footers */
@@ -97,8 +102,9 @@ h4 {
     text-align: center;
     /* Zentriert den Text im Footer */
     padding: 20px;
+    margin-top: auto;
     /* Innenabstand */
-    position: fixed;
+    position: fixed;s
     /* Positionierung */
     bottom: 0;
     /* Positionierung am unteren Rand */
@@ -139,7 +145,7 @@ h4 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Schatten für einen 3D-Effekt */
     width: 300px; /* Breite des Containers */
     border-radius: 10px;
-    margin: 200px 500px;
+    margin: 200px 600px;
 }
 
 /* Styles für das Formular */
