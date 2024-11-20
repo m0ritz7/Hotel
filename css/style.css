@@ -315,7 +315,7 @@ img{
 
 .welcome-actions .logout-button:hover,
 .profile-container .logout-button:hover {
-    background-color: #c9302c; /* Dunkleres Rot beim Hover */
+    background-color: #c9302c;
 }
 
 

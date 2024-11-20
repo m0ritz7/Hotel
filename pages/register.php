@@ -240,4 +240,3 @@ include '../includes/navbar.php';
     </form>
     </div>
 
-<?php include '../includes/footer.php'; ?>
