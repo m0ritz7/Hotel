@@ -25,6 +25,7 @@ include '../includes/navbar.php';
         <p>Sie sind erfolgreich eingeloggt.</p>
         <div class="welcome-actions">
             <a href="profile.php" class="action-button">Profil ansehen</a>
+            <a href="reserve.php" class="action-button2">Zimmer reservieren</a>
             <a href="logout.php" class="action-button logout-button">Logout</a>
         </div>
     </div>
