@@ -140,12 +140,19 @@ h4 {
 
 /* Log in Container Design */
 .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white; /* Hintergrundfarbe des Containers */
     padding: 40px; /* Innenabstand */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Schatten für einen 3D-Effekt */
-    width: 300px; /* Breite des Containers */
-    border-radius: 10px;
-    margin: 200px 600px;
+    width: 500px; /* Breite des Containers */
+    border-radius: 30px;
+    margin: 0, auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Styles für das Formular */
@@ -247,5 +254,153 @@ margin-top: -20px;
 img{
     padding: 30px;
     margin-top: -20px;
+}
+
+.welcome-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.welcome-container h1 {
+    font-size: 36px;
+    color: #282828;
+    margin-bottom: 20px;
+}
+
+.welcome-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.welcome-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50; /* Grün */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #45a049;
+}
+
+.welcome-actions .logout-button,
+.profile-container .logout-button {
+    background-color: #d9534f; /* Rot */
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+.welcome-actions .logout-button:hover,
+.profile-container .logout-button:hover {
+    background-color: #c9302c; /* Dunkleres Rot beim Hover */
+}
+
+
+
+.profile-container {
+    margin: 50px auto;
+    padding: 40px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.profile-container h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #282828;
+    margin-bottom: 30px;
+}
+
+.profile-section {
+    margin-bottom: 40px;
+}
+
+.profile-section h2 {
+    font-size: 24px;
+    color: #282828;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: #d9534f;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.success-message {
+    color: #28a745;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
