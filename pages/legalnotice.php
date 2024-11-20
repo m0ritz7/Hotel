@@ -4,12 +4,12 @@ include '../includes/header.php';
 include '../includes/navbar.php';
 ?>
 
-    <div class="impressum-container-1">
+<div class="impressum-container-1">
     <h3>Dings Hotel GmbH</h3>
     <h4>Hotellerie</h4>
-    </div>
+</div>
 
-    <div class="impressum-container-2">
+<div class="impressum-container-2">
     <p>Vertreten durch: Sebastian Ecker und Moritz Heberle</p>
     <p>UID-Nr: ATU12345678</p>
     <p>FN: 123456a</p>
@@ -22,11 +22,12 @@ include '../includes/navbar.php';
     <p>Gewerbeordnung: <a href>www.ris.bka.gv.at</a href></p>
     <p>Bezirkshauptmannschaft Wien</p>
     <p>Hotellerie</p>
-    </div>
+</div>
 
-    <img src="https://img.freepik.com/vektoren-kostenlos/flache-hotelfassade-hintergrund_23-2148157379.jpg" alt="Bild des Hotels" width="300" height="200">
+<img src="https://img.freepik.com/vektoren-kostenlos/flache-hotelfassade-hintergrund_23-2148157379.jpg"
+    alt="Bild des Hotels" width="300" height="200">
 
-    <div class="impressum-container-3">
+<div class="impressum-container-3">
     <p>Verbraucher haben die Möglichkeit,
         Beschwerden an die Online-
         Streitbeilegungsplattform der EU zu

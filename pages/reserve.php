@@ -64,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['new_reservation'])) {
 ?>
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,13 +72,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['new_reservation'])) {
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-light">
     <div class="container mt-5">
-        <h1 class="text-center text-primary">Zimmer Reservierungen</h1>
+        <h1 class="text-center text-primary" style="color: #1587e5;">Zimmer Reservierungen</h1>
 
         <!-- Neue Reservierung -->
         <div class="card mt-4">
-            <div class="card-header bg-primary text-white">
+            <div class="card-header" style="background-color: #1587e5; color: white;">
                 <h2>Neue Reservierung anlegen</h2>
             </div>
             <div class="card-body">
@@ -155,4 +157,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['new_reservation'])) {
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
