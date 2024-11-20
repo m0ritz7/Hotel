@@ -5,7 +5,6 @@ body {
     padding: 0;
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
-    height: 100%;
 } 
 
 .benutzeranleitung {
@@ -89,11 +88,7 @@ h4 {
     /* Hintergrundfarbe beim Hover */
     border-radius: 10px;
 }
-.content-wrapper {
-    min-height: 100%; /* Mindestens die Fensterhöhe einnehmen */
-    display: flex;
-    flex-direction: column;
-}
+
 .footer {
     background-color: #282828;
     /* Hintergrundfarbe des Footers */
