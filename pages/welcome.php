@@ -26,7 +26,10 @@ include '../includes/navbar.php';
         <div class="welcome-actions">
             <a href="profile.php" class="action-button">Profil ansehen</a>
             <a href="reserve.php" class="action-button2">Zimmer reservieren</a>
+            <a href="upload.php" class="action-button2">Dateien hochladen</a>
             <a href="logout.php" class="action-button logout-button">Logout</a>
+            
+
         </div>
     </div>
 </body>
