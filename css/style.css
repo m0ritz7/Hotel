@@ -209,13 +209,14 @@ h4 {
 
 .register-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; /* Maximale Breite des Formulars */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
     text-align: center;
-    margin: 50px 500px;
+    margin: 20px auto 0 auto; /* Abstand zur Navbar (100px) */
+    position: relative; /* Dynamische Positionierung innerhalb des Containers */
 }
 
 .register-container input[type="text"],
@@ -244,6 +245,58 @@ h4 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+/* Entferne grüne Validierungsrahmen und Häkchen */
+input:valid, input:invalid {
+    box-shadow: none; /* Entfernt den Schatten */
+    border-color: #ddd; /* Blaue Rahmenfarbe */
+}
+
+/* Standard-Rahmenstil für alle Felder */
+input, select, textarea {
+    border: 1px solid #007bff; /* Blaue Rahmenfarbe */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Sanfter Übergang bei Hover */
+}
+
+/* Hover-Effekt */
+input:hover, select:hover, textarea:hover {
+    border-color: #0056b3; /* Dunklere Blautöne beim Hover */
+}
+
+/* Fokus-Effekt */
+input:focus, select:focus, textarea:focus {
+    outline: none; /* Entfernt den standardmäßigen Fokusrahmen */
+    border-color: #0056b3; /* Dunklerer Blau-Fokus */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Weicher blauer Schimmer */
+}
+
+/* Fehlermeldung bei ungültiger Eingabe */
+.invalid-feedback {
+    color: #dc3545; /* Rot für Fehlermeldungen */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Button-Styling */
+button {
+    background-color: #007bff; /* Blau */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Dunkelblauer Hover */
+}
+
 
 .impressum-container-1 {
     padding: 30px;
@@ -444,4 +497,132 @@ img {
 
 .custom-card-header {
     background-color: #1587e5;
+}
+
+/* Allgemeine Stildefinitionen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Überschriften */
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+/* Upload-Container */
+.upload-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Buttons */
+.upload-container button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.upload-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Hochgeladenes Bild */
+.uploaded-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+/* Profil-Container */
+.profile-container {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+/* Profilbild-Container */
+.profile-pic {
+    width: 150px; /* Feste Breite */
+    height: 150px; /* Feste Höhe */
+    border: 3px solid #007bff; /* Blaue Umrandung */
+    margin: 20px auto;
+    overflow: hidden; /* Alles außerhalb des Containers wird abgeschnitten */
+    display: block;
+    position: relative; /* Positionierung für das Bild */
+    background-color: #f0f0f0; /* Hintergrundfarbe */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-sizing: border-box; /* Inklusive Rahmen */
+}
+
+/* Profilbild selbst */
+.profile-pic img {
+    position: absolute; /* Absolute Positionierung */
+    top: 0; /* Start bei der oberen Kante */
+    left: 0; /* Start bei der linken Kante */
+    width: 100%; /* Fülle die gesamte Breite */
+    height: 100%; /* Fülle die gesamte Höhe */
+    object-fit: cover; /* Schneide das Bild zu, um den Container zu füllen */
+    object-position: center; /* Zentriere das Bild im Container */
+}
+
+/* Datei-Upload-Button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+/* Verstecke den Datei-Input */
+input[type="file"] {
+    display: none;
+}
+
+/* Upload- und Löschen-Buttons */
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Löschen-Button */
+.delete-button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
 }

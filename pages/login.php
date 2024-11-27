@@ -8,18 +8,23 @@ include '../includes/navbar.php';
 $valid_username = "testuser";
 $valid_password = "123456";
 
-if($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if($username === $valid_username && $password === $valid_password) {
+    if ($username === $valid_username && $password === $valid_password) {
+        // Session starten und Benutzer speichern
+        session_start();
         $_SESSION['username'] = $username;
-        header("Location: welcome.php");
+
+        // Weiterleitung zur Startseite oder Profilseite
+        header("Location: ../pages/profile.php");
         exit();
     } else {
-        $error = "Ungültiger Benutzername oder Passwort!";
+        echo "Ungültiger Benutzername oder Passwort!";
     }
 }
+
 
 ?>
 
