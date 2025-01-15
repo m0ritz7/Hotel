@@ -1,9 +1,6 @@
 <?php
-session_start();
-
-$title = "Willkommen-Seite";
+require_once '../config.php';
 include '../includes/header.php';
-include '../includes/navbar.php';
 
 // Überprüfen, ob der Benutzer eingeloggt ist
 /*
@@ -104,9 +101,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['new_reservation'])) {
                         <label for="parking" class="form-check-label">Mit Parkplatz</label>
                     </div>
 
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" name="pets" id="pets">
-                        <label for="pets" class="form-check-label">Haustiere mitnehmen</label>
+                    <div class="mb-3">
+                        <label for="pets" class="form-label">Haustiere mitnehmen</label>
+                        <input type="text" name="pets" id="pets" class="form-control">
                     </div>
 
                     <button type="submit" name="new_reservation" class="btn btn-success">Reservierung anlegen</button>

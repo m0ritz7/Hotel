@@ -1,7 +1,6 @@
 <?php
-$title = "Impressum";
+require_once '../config.php';
 include '../includes/header.php';
-include '../includes/navbar.php';
 ?>
 
 <div class="impressum-container-1">

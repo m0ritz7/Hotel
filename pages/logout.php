@@ -1,7 +1,12 @@
 <?php
-session_start(); // Session starten
-session_unset(); // Alle Session-Daten löschen
+session_unset(); // Alle Session-Daten entfernen
 session_destroy(); // Session zerstören
+
+if (ini_get("session.use_cookies")) {
+    $params = session_get_cookie_params();
+    setcookie(session_name(), '', time() - 42000, $params["path"], $params["domain"], $params["secure"], $params["httponly"]);
+}
+
 header("Location: login.php"); // Zurück zur Login-Seite
 exit();
 ?>

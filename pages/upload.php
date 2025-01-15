@@ -1,8 +1,7 @@
 <?php
 
-$title = "Willkommen-Seite";
+require_once '../config.php';
 include '../includes/header.php';
-include '../includes/navbar.php';
 
 
   // store the path to your upload directory in a variable
@@ -13,17 +12,11 @@ include '../includes/navbar.php';
     
   }
 
-  // Use the global server variable to check if it is a post request
-  // and also check if the filem with the name on your input isset
-  // https://www.php.net/manual/de/reserved.variables.server
-  // https://www.php.net/manual/de/reserved.variables.files
-  // https://www.php.net/manual/de/function.isset.php
+
   if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
-    // store the path where you want to upload the file in a variable as string
+   
     $uploadFile = $uploadDir;
-    // upload the file
-    // https://www.php.net/manual/de/function.move-uploaded-file.php
-    // use the the tmp_name to get the uploaded file
+   
     if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadFile)) {
         echo '<div class="alert alert-success">File uploaded successfully to: ' . htmlspecialchars($uploadFile) . '</div>';
       } else {
