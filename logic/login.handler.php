@@ -20,10 +20,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Passwort überprüfen
             if (password_verify($password, $user['password'])) {
+
                 // Login erfolgreich
-                $_SESSION['username'] = $user['username'];
-                header("Location: ../pages/welcome.php");
-                exit;
+                if($_SESSION['username'] = $user['username']){
+                    header("Location: ../pages/welcome.php");
+                    exit;
+                } 
+                if($_SESSION['role'] == 'admin'){
+                    header("Location: ../pages/admin.menü.php");
+                    exit;
+                }
             }
         }
     }

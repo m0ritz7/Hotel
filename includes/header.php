@@ -4,14 +4,23 @@
 
 <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="../pages/index.php">Startseite</a></li>
+            <li><a href="../pages/index.php">Home</a></li>
             <li><a href="../pages/hilfe.php">Hilfe</a></li>
-            <li><a href="../pages/legalnotice.php">Über uns</a></li>
-                <?php if (isset($_SESSION['username'])): ?>
-            <li><a href="../pages/profile.php">Profil</a></li>
+            <li><a href="../pages/legalnotice.php">Impressum</a></li>
+
+        <!--User eingeloggt--> 
+        <?php if (isset($_SESSION['username'])): ?>
+            <li><a href="../pages/welcome.php">Menü</a></li>
             <li><a href="../pages/logout.php">Log out</a></li>
                 <?php else: ?>
+
+        <!-- User nicht eingeloggt-->
             <li><a href="../pages/login.php">Log in</a></li>
                 <?php endif; ?>
+
+        <!-- Admin eingeloggt-->
+        <?php if (isset($_SESSION['username']) && $_SESSION['role'] === 'admin'): ?>
+            <li><a href="../pages/admin.menü.php">Menü</a></li>
+            <?php endif; ?>
         </ul>
 </nav>
