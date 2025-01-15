@@ -14,7 +14,7 @@ error_reporting(E_ALL);
 </p>
 
 <div class="register-container">    
-        <form action="../logic/register.handler.php" method="POST">
+        <form action="../logic/formhandler.php" method="POST">
         <div class="mb-3">
                 <label for="salutation">Anrede</label>
                 <select class="form-select" name="salutation" id="salutation" required aria-label="select example">
@@ -51,14 +51,14 @@ error_reporting(E_ALL);
 
             <div class="mb-3">
                 <label for="password" class="form-label">Passwort</label>
-                <input type="text" class="form-control" id="password" name="password" required>
+                <input type="password" class="form-control" id="password" name="password" required>
             </div>
 
 
             <div class="mb-3">
                 <label for="password2" class="form-label">Passwort
                     wiederholen</label>
-                <input type="text" class="form-control" id="password2" name="password2" required>
+                <input type="password" class="form-control" id="password2" name="password2" required>
             </div>
 
 

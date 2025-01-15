@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-if (isset($_SESSION['role']) || $_SESSION['role'] === 'admin') {
+if ($_SESSION['role'] === 'admin') {
     header("Location: /Hotel/pages/admin.php");
     exit();
 }
@@ -24,7 +24,6 @@ if (isset($_SESSION['role']) || $_SESSION['role'] === 'admin') {
             <a href="profile.php" class="action-button">Profil bearbeiten</a>
             <a href="reservation.php" class="action-button2">Zimmer reservieren</a>
             <a href="upload.php" class="action-button2">Dateien hochladen</a>
-            <a href="logout.php" class="action-button logout-button">Logout</a>
         </div>
     </div>
 </body>

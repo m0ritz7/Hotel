@@ -33,6 +33,7 @@ include '../includes/header.php';
         richten: <a href>http://ec.europa.eu/odr</a href>
     <p>Sie können allfällige Beschwerde auch an
         die oben angegebene E-Mail-Adresse richten.</p>
+        <p>&copy; 2025 Dings Hotel. Alle Rechte vorbehalten.</p>
     </p>
 </div>
 

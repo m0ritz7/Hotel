@@ -11,17 +11,18 @@
 
         <!--User eingeloggt--> 
         <?php if (isset($_SESSION['username']) && $_SESSION['role'] === 'user'): ?>
-            <li><a href="../pages/welcome.php">Menü</a></li>
+            <li><a href="../pages/welcome.php">Profil</a></li>
             <li><a href="../pages/logout.php">Log out</a></li>
+            
+            <?php elseif(isset($_SESSION['username']) && $_SESSION['role'] === 'admin'): ?>
+            <li><a href="../pages/admin.php">Adminbereich</a></li>
+            <li><a href="../pages/logout.php">Log out</a></li>       
                 <?php else: ?>
 
         <!-- User nicht eingeloggt-->
-            <li><a href="../pages/login.php">Log in</a></li>
+            <li><a href="../pages/login.php">Log in / Register</a></li>
                 <?php endif; ?>
 
-        <!-- Admin eingeloggt-->
-        <?php if (isset($_SESSION['username']) && $_SESSION['role'] === 'admin'): ?>
-            <li><a href="../pages/admin.php">Adminbereich</a></li>
-            <?php endif; ?>
+
         </ul>
 </nav>
