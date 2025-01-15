@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!empty($username) && !empty($password)) {
         // Benutzer aus der Datenbank abrufen
-        $query = "SELECT username, password FROM users WHERE username = ?";
+        $query = "SELECT * FROM users WHERE username = ?";
         $stmt = $conn->prepare($query);
         $stmt->bind_param('s', $username);
         $stmt->execute();
@@ -20,16 +20,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Passwort überprüfen
             if (password_verify($password, $user['password'])) {
-
-                // Login erfolgreich
-                if($_SESSION['username'] = $user['username']){
-                    header("Location: ../pages/welcome.php");
-                    exit;
-                } 
-                if($_SESSION['role'] == 'admin'){
-                    header("Location: ../pages/admin.menü.php");
-                    exit;
-                }
+                $_SESSION['username'] = $user['username'];
+                $_SESSION['role'] = $user['role'];
+                
+                header("Location: ../pages/welcome.php");
+                
+                exit;
             }
         }
     }

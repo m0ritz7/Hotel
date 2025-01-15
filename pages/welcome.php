@@ -8,6 +8,11 @@ if (!isset($_SESSION['username'])) {
     header("Location: pages/login.php"); // Falls nicht eingeloggt, zurück zur Login-Seite
     exit();
 }
+
+if (isset($_SESSION['role']) || $_SESSION['role'] === 'admin') {
+    header("Location: /Hotel/pages/admin.php");
+    exit();
+}
 ?>
 
     <title>Willkommen</title>
@@ -17,7 +22,7 @@ if (!isset($_SESSION['username'])) {
         <p>Sie sind erfolgreich eingeloggt.</p>
         <div class="welcome-actions">
             <a href="profile.php" class="action-button">Profil bearbeiten</a>
-            <a href="reserve.php" class="action-button2">Zimmer reservieren</a>
+            <a href="reservation.php" class="action-button2">Zimmer reservieren</a>
             <a href="upload.php" class="action-button2">Dateien hochladen</a>
             <a href="logout.php" class="action-button logout-button">Logout</a>
         </div>

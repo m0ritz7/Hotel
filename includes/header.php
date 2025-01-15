@@ -5,11 +5,12 @@
 <nav class="navbar">
         <ul class="nav-links">
             <li><a href="../pages/index.php">Home</a></li>
+            <li><a href="../pages/news.php">Newsletter</a></li>
             <li><a href="../pages/hilfe.php">Hilfe</a></li>
             <li><a href="../pages/legalnotice.php">Impressum</a></li>
 
         <!--User eingeloggt--> 
-        <?php if (isset($_SESSION['username'])): ?>
+        <?php if (isset($_SESSION['username']) && $_SESSION['role'] === 'user'): ?>
             <li><a href="../pages/welcome.php">Menü</a></li>
             <li><a href="../pages/logout.php">Log out</a></li>
                 <?php else: ?>
@@ -20,7 +21,7 @@
 
         <!-- Admin eingeloggt-->
         <?php if (isset($_SESSION['username']) && $_SESSION['role'] === 'admin'): ?>
-            <li><a href="../pages/admin.menü.php">Menü</a></li>
+            <li><a href="../pages/admin.php">Adminbereich</a></li>
             <?php endif; ?>
         </ul>
 </nav>

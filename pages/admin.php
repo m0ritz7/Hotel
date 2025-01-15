@@ -5,7 +5,7 @@ include '../includes/header.php';
 
 // Überprüfen, ob ein Admin eingeloggt ist
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
-    header("Location: pages/login.php");
+    header("Location: /Hotel/pages/welcome.php");
     exit();
 }
 ?>
